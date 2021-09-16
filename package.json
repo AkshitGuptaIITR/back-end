@@ -1,0 +1,25 @@
+{
+  "name": "node-example",
+  "version": "1.0.0",
+  "description": "This is the back-end for the Allianz Exports",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.6",
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "intern",
+    "heroku",
+    "Allianz Exports"
+  ],
+  "engines": {
+    "node": "14.16.1"
+  },
+  "author": "Akshit-Gupta",
+  "license": "MIT"
+}
