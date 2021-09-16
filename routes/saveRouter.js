@@ -37,7 +37,7 @@ const getResult = async (req, res) => {
       ]);
     }
     res.status(200).json({
-      result
+      ...result
     })
   } catch (err) {
     res.status(400).json({

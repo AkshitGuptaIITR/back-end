@@ -1,7 +1,8 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
-const saveRouter = require('./routes/saveRouter')
+const saveRouter = require('./routes/saveRouter');
+const cors = require('cors');
 
 dotenv.config({ path: './config.env' });
 
@@ -17,6 +18,7 @@ mongoose.connect(DB, {
   console.log('Database Connected!')
 });
 
+app.use(cors());
 app.use('/api', saveRouter)
 
 const PORT = process.env.PORT;
