@@ -10,7 +10,7 @@
     "nodemon": "^2.0.12"
   },
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "keywords": [
     "intern",
@@ -18,7 +18,7 @@
     "Allianz Exports"
   ],
   "engines": {
-    "node": "14.16.1"
+    "node": ">=10.0.0"
   },
   "author": "Akshit-Gupta",
   "license": "MIT"
