@@ -11,7 +11,8 @@ const saveController = async (req, res, next) => {
   }
   catch (err) {
     res.status(400).josn({
-      err
+      message: 'Error happend',
+      error: err
     })
   }
   next();
@@ -41,7 +42,8 @@ const getResult = async (req, res) => {
     })
   } catch (err) {
     res.status(400).json({
-      err
+      message: 'Error happend',
+      error: err
     })
   }
 }
@@ -55,7 +57,8 @@ const getController = async (req, res) => {
 
   } catch (err) {
     res.status(400).json({
-      err
+      message: 'Error happend',
+      error: err
     })
   }
 }
