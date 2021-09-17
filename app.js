@@ -20,6 +20,11 @@ mongoose.connect(DB, {
 
 app.use(cors());
 app.use('/api', saveRouter)
+app.use('/', (req, res) => {
+  res.status(200).json({
+    message: 'hello'
+  })
+})
 
 const PORT = process.env.PORT;
 
