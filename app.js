@@ -19,7 +19,7 @@ mongoose.connect(DB, {
 });
 
 app.use(cors());
-app.use('/api', saveRouter)
+// app.use('/api', saveRouter)
 app.use('/', (req, res) => {
   res.send('Hello')
 })
